@@ -29,3 +29,12 @@ O problema de detecção de fraudes é caracterizado por um forte desbalanceamen
 5.  **Análise de Desempenho e Generalização:** Treinamento do modelo final otimizado e validação robusta por meio de métricas como Acurácia, Precisão, Recall e F1-Score no conjunto de teste independente.
 
 ---
+## Estrutura do Repositório
+
+*   `data_loader.py`: Script responsável pela extração, amostragem estratificada e carregamento inicial dos dados com base em uma semente aleatória.
+*   `preprocessor.py`: Módulo que encapsula o pipeline de transformações, imputação e normalização dos dados brutos utilizando o scikit-learn.
+*   `mlp_model.py`: Definição da arquitetura PyTorch da rede neural Perceptron Multicamadas, incluindo configurações de dropout e fluxo forward.
+*   `trainer.py`: Estrutura de loop de treinamento, validação cruzada estratificada (K-Fold) e controle de convergência precoce (*Early Stopping*).
+*   `run_experiments.py`: Script principal para execução em lote das configurações de teste, coleta de métricas e geração dos gráficos estatísticos.
+*   `Relatorio.md`: Documentação científica e discussão analítica aprofundada dos resultados empíricos obtidos no projeto (em desenvolvimento).
+*   `requirements.txt`: Relação de dependências e bibliotecas necessárias para a execução do ambiente virtual do projeto.
