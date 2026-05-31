@@ -35,7 +35,7 @@ Para evitar o vazamento de dados (*data leakage*), o pré-processamento foi tota
 ---
 
 ## 3. Arquitetura da Rede e Hiperparâmetros
-*(Seção sob responsabilidade de **Pedro Davi**)*
+*(Seção sob responsabilidade de **Cleiton Mizael**)*
 
 A arquitetura da rede neural foi implementada em PyTorch no arquivo `mlp_model.py`. Trata-se de uma rede do tipo feedforward totalmente conectada (`nn.Linear`).
 
